@@ -3,8 +3,9 @@ package dataStorage;
 public class MyStack {
 
     MyNode top = new MyNode();
+
     public boolean isEmpty(){
-        if(top == null) {
+        if(top.toString().equals("null")) {
             return true;
         }
         else {
