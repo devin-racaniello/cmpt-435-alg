@@ -28,7 +28,7 @@ public class MyStack {
             top = top.next;
         }
 
-        System.out.print(pop);
+        //System.out.print(pop);
         return pop;
     }
 
