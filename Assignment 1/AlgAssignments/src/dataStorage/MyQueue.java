@@ -35,6 +35,7 @@ public class MyQueue {
             top = top.next;
         }
 
+        System.out.print(pop);
         return pop;
     }
 }

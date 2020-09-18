@@ -21,6 +21,8 @@ public class LinkedoList {
         System.out.println(q1.deque());
 
 
+
+
     }
 
 
