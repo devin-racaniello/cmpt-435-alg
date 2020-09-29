@@ -28,7 +28,7 @@ public class TextReader {
                     }
                 }
 
-                
+
                 if (isPalandrome){
                     System.out.println("Success:"+data);
                 }
