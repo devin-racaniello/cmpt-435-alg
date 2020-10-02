@@ -1,7 +1,7 @@
 package dataStorage;
 
 public class InsertionSort {
-    void sort(String input[])
+    public static String[] sort(String input[])
     {
         int l = input.length;
 
@@ -21,6 +21,7 @@ public class InsertionSort {
 
             input[j + 1] = val;
         }
+        return input;
 
     }
 }

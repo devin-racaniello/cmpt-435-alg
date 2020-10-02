@@ -1,7 +1,8 @@
 package dataStorage;
 
 public class SelectionSort {
-    void sort(String input[])
+
+    public static String[] sort(String input[])
     {
         int l = input.length;
 
@@ -25,6 +26,8 @@ public class SelectionSort {
             input[min] = input[i];
             input[i] = temp;
         }
+
+        return input;
 
     }
 }
