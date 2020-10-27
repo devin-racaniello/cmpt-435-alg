@@ -34,7 +34,8 @@ public class SortOut {
         System.out.println(Arrays.toString(outArray));
         System.out.println(Arrays.toString(SelectionSort.sort(outArray)));
         System.out.println(Arrays.toString(InsertionSort.sort(outArray)));
-        System.out.println(Arrays.toString(QuickSort.partition(outArray, 0, outArray.length)));
+        System.out.println(Arrays.toString(MergeSort.sort(outArray)));
+        System.out.println(Arrays.toString(QuickSort.sort(outArray,0,outArray.length)));
 
 
 
