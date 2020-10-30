@@ -30,12 +30,12 @@ public class SortOut {
         for (int i = 0; i < outList.size(); i++){
             outArray[i] = outList.get(i);
         }
-        System.out.println(Arrays.toString(outArray));
+        System.out.println("Array: "+Arrays.toString(outArray));
 
         String mergeSortedArray[] = MergeSort.sort(outArray);
         String randomItems[] = new String[42];
 
-        System.out.println(Arrays.toString(mergeSortedArray));
+        System.out.println("MergeSorted Array: "+Arrays.toString(mergeSortedArray));
 
 
         for(int i = 0; i <= 41; i++){
@@ -44,21 +44,28 @@ public class SortOut {
 
         System.out.println("Random Items: "+Arrays.toString(randomItems));
 
-        System.out.println(LinearSearch.linearSearch(mergeSortedArray,0,randomItems[0])+" out of "+mergeSortedArray.length);
         BinarySearch bc = new BinarySearch();
-        System.out.println(bc.binarySearch(mergeSortedArray,0,mergeSortedArray.length,randomItems[0])+" out of "+mergeSortedArray.length);
-        System.out.println(bc.comp);
+
         int[] linComp = new int[42];
         int[] binComp = new int [42];
+        int linTot = 0;
+        int binTot = 0;
 
         for(int j = 0; j <= 41; j++){
-            if (mergeSortedArray[LinearSearch.linearSearch(mergeSortedArray,0,randomItems[j])].equals(randomItems[j])){
-                System.out.println("Yes");
-            } else {
-                System.out.println("No");
-            }
+            linComp[j] = LinearSearch.linearSearch(mergeSortedArray,0, randomItems[j]);
+            bc.binarySearch(mergeSortedArray,0,mergeSortedArray.length,randomItems[j]);
+            binComp[j] = bc.popComp();
+            linTot += linComp[j];
+            binTot += binComp[j];
         }
 
+        double linAverage = linTot/42.0;
+        double binAverage = binTot/42.0;
 
+        System.out.println("Linear comparisons: " +Arrays.toString(linComp));
+        System.out.println("Binary comparisons: " +Arrays.toString(binComp));
+
+        System.out.println("Linear Average: " +linAverage);
+        System.out.println("Binary Average: " +binAverage);
     }
 }

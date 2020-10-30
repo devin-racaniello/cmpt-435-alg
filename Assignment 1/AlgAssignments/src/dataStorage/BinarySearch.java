@@ -16,7 +16,7 @@ public class BinarySearch {
                 return m;
             }
 
-            System.out.println(m);
+            //System.out.println(m);
             //Since the algorithm cant differentiate order of same length strings I am running linear seach with my left bound added to cut search time
 
             if (myArr[m].length() == x.length()){
@@ -34,8 +34,10 @@ public class BinarySearch {
         }
         return -1;
     }
-    public int getComp(){
-        return this.comp;
+    public int popComp(){
+        int out = this.comp;
+        this.comp = 0;
+        return out;
     }
 
 }
