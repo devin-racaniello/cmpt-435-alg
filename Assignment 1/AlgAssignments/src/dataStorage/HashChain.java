@@ -5,9 +5,10 @@ import java.io.FileReader;
 import java.util.Arrays;
 
 public class HashChain {
+
     private static final int TABLE_SIZE = 250;
 
-    public String[] hashContents = new String[TABLE_SIZE];
+    public MyNode[] hashContents = new MyNode[TABLE_SIZE];
 
 
 
@@ -39,11 +40,16 @@ public class HashChain {
 
     }
     public void AddItem(String item) {
-        hashContents[makeHashCode(item)] = item;
+        MyNode node = new MyNode(item);
+
+        hashContents[makeHashCode(item)].next = node;
+
 
         //need linked list
+    }
 
-
+    public String getItem(int index){
+        return hashContents[index].info;
     }
 
 
