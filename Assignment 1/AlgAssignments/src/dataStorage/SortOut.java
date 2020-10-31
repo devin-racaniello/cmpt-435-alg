@@ -11,6 +11,7 @@ public class SortOut {
         Random myRand = new Random();
         boolean isPalandrome = true;
         ArrayList<String> outList = new ArrayList<String>();
+        HashChain MagicItemHash = new HashChain();
         try {
             File myObj = new File("C:\\Users\\djrac\\Documents\\GitHub\\cmpt-435-alg\\Assignment 1\\AlgAssignments\\src\\dataStorage\\magicitems.txt");
             Scanner myReader = new Scanner(myObj);
@@ -29,6 +30,7 @@ public class SortOut {
 
         for (int i = 0; i < outList.size(); i++){
             outArray[i] = outList.get(i);
+            MagicItemHash.addItem(outArray[i]);
         }
         System.out.println("Array: "+Arrays.toString(outArray));
 
@@ -67,5 +69,12 @@ public class SortOut {
 
         System.out.println("Linear Average: " +linAverage);
         System.out.println("Binary Average: " +binAverage);
+
+        System.out.println(MagicItemHash.getItem(MagicItemHash.makeHashCode(randomItems[0])));
+
+        System.out.println(MagicItemHash.getLength());
+
+        System.out.println(mergeSortedArray.length);
+
     }
 }

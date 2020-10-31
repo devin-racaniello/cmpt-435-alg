@@ -10,10 +10,14 @@ public class HashChain {
 
     public MyNode[] hashContents = new MyNode[TABLE_SIZE];
 
+    public int comp = 0;
 
 
 
-    private int makeHashCode(String input) {
+
+
+
+    public int makeHashCode(String input) {
         input = input.toLowerCase();
 
         int len = input.length();
@@ -39,18 +43,76 @@ public class HashChain {
         return hashCode;
 
     }
-    public void AddItem(String item) {
+    public void addItem(String item) {
         MyNode node = new MyNode(item);
+        MyNode check = new MyNode();
 
-        hashContents[makeHashCode(item)].next = node;
+        if (hashContents[makeHashCode(item)]==null){
+            hashContents[makeHashCode(item)] = node;
+        } else {
+            check = hashContents[makeHashCode(item)];
+            while (!(check.next==null)){
+                check = check.next;
+
+            }
+            check.next = node;
+        }
+
+
+        //System.out.println(node.info);
+
 
 
         //need linked list
     }
 
+
     public String getItem(int index){
-        return hashContents[index].info;
+        if(hashContents[index]==null){
+            return null;
+        }
+        comp++;
+        MyNode check = new MyNode();
+        check = hashContents[index];
+        String out = "";
+        while (!(check.next==null)){
+            out += check.info+"\n";
+            check = check.next;
+            comp++;
+            if((check.next==null)){
+                comp++;
+                out += check.info;
+            }
+
+
+        }
+        return out;
     }
+
+    public int getLength(){
+        int len = 0;
+        for (int i = 0; i < TABLE_SIZE; i++){
+            MyNode check = new MyNode();
+            check = hashContents[i];
+            if (!(check==null)){
+                len++;
+                while (!(check.next==null)){
+
+                    len++;
+                    check = check.next;
+                    if(!(check.next==null)){
+                        len++;
+                        break;
+                    }
+                }
+            }
+
+
+        }
+        return len;
+    }
+
+
 
 
 
