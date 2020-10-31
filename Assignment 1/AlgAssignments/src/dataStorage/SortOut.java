@@ -50,8 +50,10 @@ public class SortOut {
 
         int[] linComp = new int[42];
         int[] binComp = new int [42];
+        int[] hashComp = new int[42];
         int linTot = 0;
         int binTot = 0;
+        int hashTot =0;
 
         for(int j = 0; j <= 41; j++){
             linComp[j] = LinearSearch.linearSearch(mergeSortedArray,0, randomItems[j]);
@@ -70,11 +72,22 @@ public class SortOut {
         System.out.println("Linear Average: " +linAverage);
         System.out.println("Binary Average: " +binAverage);
 
-        System.out.println(MagicItemHash.getItem(MagicItemHash.makeHashCode(randomItems[0])));
-
         System.out.println(MagicItemHash.getLength());
 
         System.out.println(mergeSortedArray.length);
+
+        for(int h = 0; h <= 41; h++){
+
+            MagicItemHash.getItem(MagicItemHash.makeHashCode(randomItems[h]));
+            hashComp[h] = MagicItemHash.comp;
+            hashTot += MagicItemHash.comp;
+
+        }
+        double hashAverage = hashTot/42.0;
+
+        System.out.println("Hash comparisons: " +Arrays.toString(hashComp));
+        System.out.println("Hash Average: " +hashAverage);
+
 
     }
 }

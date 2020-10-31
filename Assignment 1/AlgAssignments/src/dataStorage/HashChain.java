@@ -68,6 +68,7 @@ public class HashChain {
 
 
     public String getItem(int index){
+        comp = 0;
         if(hashContents[index]==null){
             return null;
         }
@@ -75,14 +76,23 @@ public class HashChain {
         MyNode check = new MyNode();
         check = hashContents[index];
         String out = "";
+        if(!(check==null)){
+            out += check.info+", ";
+            comp++;
+        }
+
         while (!(check.next==null)){
-            out += check.info+"\n";
+
+
             check = check.next;
             comp++;
-            if((check.next==null)){
-                comp++;
-                out += check.info;
-            }
+            out += check.info+", ";
+
+            //if((check.next==null)){
+
+                //comp++;
+                //out += check.info;
+            //}
 
 
         }
@@ -94,16 +104,15 @@ public class HashChain {
         for (int i = 0; i < TABLE_SIZE; i++){
             MyNode check = new MyNode();
             check = hashContents[i];
+
             if (!(check==null)){
                 len++;
+
                 while (!(check.next==null)){
 
                     len++;
                     check = check.next;
-                    if(!(check.next==null)){
-                        len++;
-                        break;
-                    }
+
                 }
             }
 
