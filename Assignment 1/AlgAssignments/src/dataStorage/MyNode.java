@@ -1,4 +1,7 @@
+
+
 package dataStorage;
+
 
 public class MyNode {
     public String info;
