@@ -2,38 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd15da99-dfb0-4108-b7be-f8b1edc47282" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/AlgAssignments.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/AlgAssignments.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/BinarySearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/BinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/HashChain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/InsertionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/LinearSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/LinkedoList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/MergeSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/MyNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/MyQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/MyStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/Prj.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/SelectionSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/SortOut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/TextReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/commAnd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/graphs1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/magicitems.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/test/themerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/test/themerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graph.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GraphNode.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment 5/src/BellmanAlg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment 5/src/Greedy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment 5/src/Spice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment 5/src/WeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment 5/src/WeightedGraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment 4/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment 4/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Assignment 4/GraphNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Assignment 4/GraphNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,29 +26,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="77" column="54" lean-forward="true" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
+            <state relative-caret-position="106">
+              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1533#1542#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1509#1518#0" expanded="true" />
                 <element signature="e#1576#1587#0" expanded="true" />
                 <element signature="e#1951#1984#0" expanded="true" />
-                <element signature="e#2056#2078#0" expanded="true" />
+                <element signature="e#2246#2268#0" expanded="true" />
+                <element signature="e#2322#2333#0" expanded="true" />
+                <element signature="e#5228#5239#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/Objects.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="371" column="29" selection-start-line="371" selection-start-column="29" selection-end-line="371" selection-end-column="29" />
+              <folding>
+                <element signature="e#13877#13878#0" expanded="true" />
+                <element signature="e#13945#13946#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="457" column="16" selection-start-line="457" selection-start-column="16" selection-end-line="457" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GraphNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="214">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
-                <element signature="e#128#137#0" expanded="true" />
+                <element signature="e#130#141#0" expanded="true" />
                 <element signature="e#165#166#0" expanded="true" />
                 <element signature="e#198#199#0" expanded="true" />
                 <element signature="e#216#217#0" expanded="true" />
@@ -93,19 +96,24 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>link</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Graph.java" />
         <option value="$PROJECT_DIR$/src/GraphNode.java" />
+        <option value="$PROJECT_DIR$/src/Graph.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="780" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="300" />
     <option name="y" value="-30" />
     <option name="width" value="935" />
     <option name="height" value="1090" />
@@ -135,6 +143,9 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,7 +187,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="-7" width="1485" height="878" extended-state="6" />
+    <frame x="58" y="-7" width="1485" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -189,9 +200,10 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -207,26 +219,12 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="77" column="54" lean-forward="true" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1533#1542#0" expanded="true" />
-            <element signature="e#1576#1587#0" expanded="true" />
-            <element signature="e#1951#1984#0" expanded="true" />
-            <element signature="e#2056#2078#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GraphNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="214">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <element signature="e#128#137#0" expanded="true" />
+            <element signature="e#130#141#0" expanded="true" />
             <element signature="e#165#166#0" expanded="true" />
             <element signature="e#198#199#0" expanded="true" />
             <element signature="e#216#217#0" expanded="true" />
@@ -235,6 +233,48 @@
             <element signature="e#314#315#0" expanded="true" />
             <element signature="e#494#495#0" expanded="true" />
             <element signature="e#525#526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/Objects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="371" column="29" selection-start-line="371" selection-start-column="29" selection-end-line="371" selection-end-column="29" />
+          <folding>
+            <element signature="e#13877#13878#0" expanded="true" />
+            <element signature="e#13945#13946#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="457" column="16" selection-start-line="457" selection-start-column="16" selection-end-line="457" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WeightedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1509#1518#0" expanded="true" />
+            <element signature="e#1576#1587#0" expanded="true" />
+            <element signature="e#1951#1984#0" expanded="true" />
+            <element signature="e#2246#2268#0" expanded="true" />
+            <element signature="e#2322#2333#0" expanded="true" />
+            <element signature="e#5228#5239#0" expanded="true" />
           </folding>
         </state>
       </provider>

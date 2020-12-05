@@ -3,7 +3,8 @@ import java.util.ArrayList;
 
 public class GraphNode {
     public int vertex;
-    public ArrayList<Integer> link = new ArrayList<Integer>();
+    public ArrayList<GraphNode> link = new ArrayList<GraphNode>();
+
 
     GraphNode(int dta) {
         this.vertex = dta;
@@ -16,15 +17,16 @@ public class GraphNode {
         return vertex + "";
     }
 
-    public void addLinks(ArrayList<Integer> gn){
+    public void addLinks(ArrayList<GraphNode> gn){
         for (int i = 0; i < gn.size();i++){
             link.add(gn.get(i));
         }
     }
 
-    public void addLink(int linky){
+    public void addLink(GraphNode linky){
         link.add(linky);
     }
+
 
 
 

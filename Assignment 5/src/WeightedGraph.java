@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class Graph {
+public class WeightedGraph {
 
 
 
@@ -15,46 +15,15 @@ public class Graph {
     }
 
 
-    static void printAdjacencyList(ArrayList<ArrayList<Integer> > adj) {
-
-        System.out.println("Adjacency List: ");
-        for (int i = 0; i < adj.size(); i++) {
-            System.out.print("["+i+"]");
-            for (int j = 0; j < adj.get(i).size(); j++) {
-                System.out.print("  >  "+adj.get(i).get(j));
-            }
-            System.out.println();
-        }
-    }
-    static void printAdjacencyMatrix(ArrayList<ArrayList<Integer> > adj) {
-        System.out.println("Adjacency Matrix: ");
-        System.out.print("    ");
-        for (int i = 1; i < adj.size(); i++) {
-            System.out.print(" | " + "["+i+"]");
-        }
-        for (int i = 1; i < adj.size(); i++) {
-            System.out.print("\n" + "["+i+"]");
-            for (int j = 1; j < adj.size(); j++) {
-                if (adj.get(i).contains(j)){
-                    System.out.print("  |  1");
-                } else {
-                    System.out.print("  |  0");
-                }
-
-            }
-            System.out.println();
-        }
-    }
-
-    static ArrayList<GraphNode> printDFS(ArrayList<GraphNode> gn) {
+    static ArrayList<WeightedGraphNode> printDFS(ArrayList<WeightedGraphNode> gn) {
         return gn;
     }
 
     //do i make void?
-    static ArrayList<GraphNode> printBFS(ArrayList<GraphNode> gn) {
+    static ArrayList<WeightedGraphNode> printBFS(ArrayList<WeightedGraphNode> gn) {
 
         ArrayList<Integer> queue = new ArrayList<Integer>();
-        ArrayList<GraphNode> output = new ArrayList<GraphNode>();
+        ArrayList<WeightedGraphNode> output = new ArrayList<WeightedGraphNode>();
 
         System.out.print(gn.get(0)+" ");
         for (int t = 0; t < gn.size(); t++){
@@ -79,22 +48,54 @@ public class Graph {
 
     }
 
+    public static void bellmanShortest(ArrayList<WeightedGraphNode> gn){
+        ArrayList<Integer> currentWeights = new ArrayList<Integer>();
+
+        //set intitial values
+        currentWeights.add(0);
+        for (int i = 1; i < gn.size(); i++){
+            currentWeights.add(9999);
+        }
+
+
+        for (int o = 1; o < gn.size(); o++){
+
+            for (int t = 0; t < gn.get(o).link.size(); t++){
+
+                if (currentWeights.get(gn.indexOf(gn.get(o).link))>gn.get(o).linkMap.get(gn.get(o).link.get(t))){
+                    currentWeights.set(gn.indexOf(gn.get(o).link),gn.get(o).linkMap.get(gn.get(o).link.get(t)));
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+    }
+
+
     // Driver Code
     public static void main(String[] args) {
 
         ArrayList<ArrayList<ArrayList<Integer> > > adj = new ArrayList<ArrayList<ArrayList<Integer> > >();
-        ArrayList<ArrayList<GraphNode> > graphObjects= new ArrayList<ArrayList<GraphNode>>();
-        ArrayList<GraphNode> queue = new ArrayList<GraphNode>();
+        ArrayList<ArrayList<WeightedGraphNode> > graphObjects= new ArrayList<ArrayList<WeightedGraphNode>>();
+        ArrayList<WeightedGraphNode> queue = new ArrayList<WeightedGraphNode>();
         int i = -1;
         int curVer = 0;
         String edge1 = "";
         String edge2 = "";
+        int weight = 0;
         int edgeNum1 = 0;
         int edgeNum2 = 0;
         int offset = 1;
+        int counter = 0;
 
         try {
-            File myObj = new File("graphs1.txt");
+            File myObj = new File("graphs2.txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
 
@@ -121,17 +122,52 @@ public class Graph {
                     adj.get(i).add(new ArrayList<Integer>());
 
                     if (data.length()==12){
-                        graphObjects.add(new ArrayList<GraphNode>());
-                        graphObjects.get(i).add(new GraphNode(Integer.parseInt(data.substring(11,12))));
+                        graphObjects.add(new ArrayList<WeightedGraphNode>());
+                        graphObjects.get(i).add(new WeightedGraphNode(Integer.parseInt(data.substring(11,12))));
                     }
                     else {
-                        graphObjects.add(new ArrayList<GraphNode>());
-                        graphObjects.get(i).add(new GraphNode(Integer.parseInt(data.substring(11,13))));
+                        graphObjects.add(new ArrayList<WeightedGraphNode>());
+                        graphObjects.get(i).add(new WeightedGraphNode(Integer.parseInt(data.substring(11,13))));
                     }
 
                 }
                 if (data.contains("add edge")){
 
+                    counter = 8;
+                    while (counter<data.length()){
+                        if (data.charAt(counter)==' '||data.charAt(counter)=='-'){
+
+                        }else {
+
+                            if (edge1.length()==0){
+                                edge1 += data.charAt(counter);
+                                if (data.charAt(counter+2)==' '&&data.charAt(counter+1)!=' '){
+                                    counter++;
+                                    edge1 += data.charAt(counter);
+                                }
+                            } else if (edge2.length()==0){
+                                edge2 += data.charAt(counter);
+                                if (data.charAt(counter+2)==' '&&data.charAt(counter+1)!=' '){
+                                    counter++;
+                                    edge2 += data.charAt(counter);
+                                }
+
+                            } else {
+
+                                weight = Integer.parseInt(data.substring(counter));
+                                break;
+
+
+                            }
+
+                        }
+
+                        counter++;
+                    }
+
+
+
+                    /**
                     if(data.charAt(10)==' '){
 
                         edge1 = data.substring(9,10);
@@ -149,22 +185,27 @@ public class Graph {
                         } else {
                             edge2 = data.substring(14,16);
                         }
-                    }
+                    }**/
 
 
 
                     edgeNum1 = Integer.parseInt(edge1)-offset;
                     edgeNum2 = Integer.parseInt(edge2)-offset;
-                    GraphNode edgeNum2Node = new GraphNode(edgeNum2+offset);
+                    WeightedGraphNode edgeNum2Node = new WeightedGraphNode(edgeNum2+offset);
                     System.out.println("edges:"+edge1+" "+edge2);
                     makeEdge(adj.get(i), edgeNum1, edgeNum2);
 
 
+
+
                     for (int h = 0; h < graphObjects.get(i).size(); h++) {
                         if (graphObjects.get(i).get(h).vertex == edgeNum1+offset){
-                            graphObjects.get(i).get(h).addLink(edgeNum2Node);
+                            graphObjects.get(i).get(h).addLink(edgeNum2Node,weight);
                         }
                     }
+
+                    edge1 = "";
+                    edge2 = "";
 
 
 
@@ -181,7 +222,7 @@ public class Graph {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-        ArrayList<GraphNode> output = new ArrayList<GraphNode>();
+        ArrayList<WeightedGraphNode> output = new ArrayList<WeightedGraphNode>();
 
         //printAdjacencyList(adj.get(0));
         //printAdjacencyList(adj.get(1));
@@ -192,7 +233,6 @@ public class Graph {
         output = (printBFS(graphObjects.get(1)));
         output = (printBFS(graphObjects.get(2)));
         output = (printBFS(graphObjects.get(3)));
-        output = (printBFS(graphObjects.get(4)));
 
 
 
