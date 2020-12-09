@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a5942d-b090-4fcb-8a6a-ae2238527fe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BellmanAlg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Greedy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Spice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeightedGraphNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/Prj.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 1/AlgAssignments/src/dataStorage/Prj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Assignment 4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 4/out/production/Assignment 4/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 4/out/production/Assignment 4/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 4/out/production/Assignment 4/GraphNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 4/out/production/Assignment 4/GraphNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 4/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 4/src/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment 4/src/GraphNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment 4/src/GraphNode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/src/WeightedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1458#1459#0" expanded="true" />
@@ -71,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/Greedy.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2193">
-              <caret line="129" column="33" lean-forward="true" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+              <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#271#278#0" expanded="true" />
@@ -109,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/src/Spice.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#369#370#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
@@ -159,7 +152,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="300" />
+    <option name="x" value="780" />
     <option name="y" value="-30" />
     <option name="width" value="935" />
     <option name="height" value="1090" />
@@ -191,6 +184,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -244,7 +238,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-7" width="1485" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -259,7 +252,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,7 +320,7 @@
     <entry file="file://$PROJECT_DIR$/src/Spice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#369#370#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
@@ -356,7 +349,7 @@
     <entry file="file://$PROJECT_DIR$/src/Greedy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
-          <caret line="129" column="33" lean-forward="true" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
+          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#271#278#0" expanded="true" />
@@ -395,7 +388,7 @@
     <entry file="file://$PROJECT_DIR$/src/WeightedGraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1458#1459#0" expanded="true" />
